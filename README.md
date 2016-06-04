@@ -23,7 +23,11 @@ It will prompt you to authorize access at the first time
 
 Then just input the path of a folder, example: mirror(r'D:\My Data')
 
+Keep the sync_record.txt
+
 To-do:
+
+Adjust algorithm
 
 
 

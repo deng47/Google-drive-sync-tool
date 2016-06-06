@@ -55,22 +55,22 @@ def mirror(folder_path):
             file_name = os.path.basename(each)
             
             #check md5 hash
-            local_file_md5 = generate_md5(each)
+            local_file_md5 = generate_md5(each)          
             drive_file_md5 = getMd5Id_by_name(file_name)
-            
             #if exist, check parent id
             if local_file_md5 in drive_file_md5:
+                id_by_md5 = drive_file_md5[local_file_md5]
                 #record id
-                if parent_id == getParentId_byId(drive_file_md5[local_file_md5]):
-                    upload_record[each][1] = drive_file_md5[local_file_md5]
+                if parent_id == getParentId_byId(id_by_md5):
+                    upload_record[each][1] = id_by_md5
                 #copy file and modify its parent id and record it
                 else:
-                    upload_record[each][1] = copy_file(drive_file_md5[local_file_md5], parent_id, file_name)                    
+                    upload_record[each][1] = copy_file(id_by_md5, parent_id, file_name)                    
                     
             #if not, create it and record id
             else:
                 upload_record[each][1] = create_file(each, parent_id)
-            
+                
         #when it is a folder     
         else:
             file_name = os.path.split(each)[1]

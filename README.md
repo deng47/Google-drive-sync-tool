@@ -19,7 +19,7 @@ https://developers.google.com/drive/v3/web/quickstart/python#prerequisites
 https://developers.google.com/drive/v3/web/about-auth#OAuth2Authorizing
 https://www.youtube.com/watch?v=Z5G0luBohCg )
 
-Usage:
+How to use:
 
 Run main.py
 

@@ -16,5 +16,4 @@ def create_file(path, parentId=None):
         body['parents'] = [parentId]
 
     file_id = DRIVE.files().create(body=body, media_body=media_body, fields="id").execute()
-    print('Uploaded:   ', path)
     return file_id['id']

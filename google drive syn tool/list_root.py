@@ -10,7 +10,6 @@ def list_root():
     q="'%s' in parents and trashed=false" % 'root'
     response = DRIVE.files().list(q=q,fields='files(id, name)').execute()
     for file in response.get('files'):
-        print ('Found file: %s (%s)' % (file.get('name'), file.get('id')))
         file_id.append([file.get('name'), file.get('id')])
         
     return file_id

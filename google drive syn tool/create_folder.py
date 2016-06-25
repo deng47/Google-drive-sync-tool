@@ -14,5 +14,4 @@ def create_folder(path, parentId=None):
     else:
         folder = {'name' : folder_name, 'mimeType' : 'application/vnd.google-apps.folder', 'parents':[parentId]}    
     folder_id = DRIVE.files().create(body=folder, fields='id').execute()
-    print('Create Folder:   ',folder_name)
     return folder_id['id']

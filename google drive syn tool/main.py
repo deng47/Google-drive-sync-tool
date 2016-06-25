@@ -72,7 +72,12 @@ def mirror(folder_path):
         
         if os.path.split(each)[-1] == 'sync_checkpoint.txt' or os.path.split(each)[-1] == 'checkpoint.txt':
             continue
-        print('processing %d out od %d items... File Name: %s'%(missionNo, missionCount, each))
+            
+        #Output processing percentage
+        percentage = str(round(100*missionNo/missionCount,2))+'%'
+        #Output to the same line overwriting previous one to created animated command line. However it can't work in IDLE
+        print('processing %05d out od %d items...%s \nFile Name: %s'%(missionNo, missionCount, percentage, each))#, end='', flush=True)
+        #print('', end='\r')
                                 
         #record parent id
         parent_id = upload_record[os.path.split(each)[0]][1]

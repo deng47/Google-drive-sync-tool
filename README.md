@@ -3,6 +3,9 @@ Create a mirror backup of a local folder to Google Drive root folder
 
 Automatically check files on Google Drive
 
+Update:
+Now it is able to resume the interrupted task
+
 Prerequisite:
 
 1. Python 3

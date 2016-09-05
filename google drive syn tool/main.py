@@ -78,7 +78,7 @@ def mirror(folder_path):
         #output to the same line overwriting previous one to created animated command line
         #however IDLE doesn't support \r
         #enable ", end='', flush=True)" if you run it in the Unix terminal or Windows console
-        print('processing %05d out od %d items...%s \nFile Name: %s'%(missionNo, missionCount, percentage, each))#, end='', flush=True)
+        print('processing %05d out of %d items...%s \nFile Name: %s'%(missionNo, missionCount, percentage, each))#, end='', flush=True)
         #enable "print('', end='\r')" if you run it in the Unix terminal or Windows console
         #print('', end='\r')
                                 

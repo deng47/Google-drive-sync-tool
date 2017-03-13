@@ -1,5 +1,5 @@
 # Google-drive-sync-tool
-Create a mirror backup of a local folder to Google Drive root folder
+Create a mirror backup of a local folder under Google Drive's root folder
 
 Automatically check files on Google Drive
 

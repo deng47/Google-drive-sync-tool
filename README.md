@@ -1,10 +1,7 @@
 # Google-drive-sync-tool
-Create a mirror backup of a local folder under Google Drive's root folder
+Upload a local folder to Google Drive
 
-Automatically check files on Google Drive
 
-Update:
-Now it is able to resume any interrupted task
 
 Prerequisite:
 
@@ -19,20 +16,9 @@ https://developers.google.com/drive/v3/web/quickstart/python#prerequisites
 https://developers.google.com/drive/v3/web/about-auth#OAuth2Authorizing
 https://www.youtube.com/watch?v=Z5G0luBohCg )
 
-How to use:
 
-Run main.py
-
-It will prompt you to authorize access at the first time
-
-Then just input the path of a folder, example: mirror(r'D:\My Data')
-
-Keep the sync_record.txt
-
-To-do:
-
-Adjust algorithm
-
-
-
+##Usage:
+  - Make sure you have the client_secret.json
+  - Run ./get_creds.py to get credentials and store it into storage.json
+  - ./sync_drive.py --rsc <local path> --dst <Google Drive path>
 

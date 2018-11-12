@@ -20,5 +20,5 @@ https://www.youtube.com/watch?v=Z5G0luBohCg )
 ##Usage:
   - Make sure you have the client_secret.json
   - Run ./get_creds.py to get credentials and store it into storage.json
-  - ./sync_drive.py --rsc <local path> --dst <Google Drive path>
+  - ./sync_drive.py --rsc /local path --dst /Google Drive path
 
